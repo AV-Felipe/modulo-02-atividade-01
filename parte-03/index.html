@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML e UD</title>
+        
+        <style>
+            h1 {color:brown;}
+        </style>
+    </head>
+
+    <!--
+        As informações aqui apresentadas são a interpretação que eu pude dar ao que tenho estudado. 
+        Não pretendem ser uma resposta definitiva a qualquer problemática técnica ou teórica e tem papel 
+        secundário na presente atividade que se centra em praticar minhas habilidades com a tecnologia HTML
+    -->
+
+    <body>
+       <header>
+           <h1>Conhecendo o HTML e o UD</h1>
+           <h2>Conceitos Gerais</h2>
+           <p>
+               Nesta página veremos um pouco sobre o <strong><abbr title="Hyper Text Markup Language">HTML</abbr></strong> 
+               e a importância de observarmos algumas boas práticas tendo em vista construir e manter um <i>design universal</i>, 
+               que referiremos pelo acrônimo inglês <strong><abbr title="Universal Desgin">UD</abbr></strong>.
+            </p>
+            <p>
+                A expressão <dfn lang="en">Universal Design</dfn> e sua mais popular definição, a saber:
+            </p>
+            <blockquote  id="1">
+                <p lang="en">
+                    Universal Design is the design of products and environments to be used
+                    by all people, to the greatest extent possible, without the need for 
+                    adaptation or specialized design.<sup><a href="#1r">1</a></sup>
+                </p>
+            </blockquote>
+            <p>
+                São atribuídas ao arquiteto Ronald Mace. A ideia central é que todo projeto seja desenvolvido tendo-se 
+                em vista prover sua utilidade para o mais amplo escopo de usuários possíveis, sem a criação de barreiras
+                ao gozo do benefício provido, advindas da forma planejada para sua disponibilização.
+            </p>
+            <p>
+                No contexto do <i lang="en">web design</i>, como colocam Wendy Chisholm e Matt May em sua obra 
+                <cite lang="en">Universal Design for Web Applications</cite>:
+            </p>
+            <blockquote>
+                <p lang="en">
+                    Universal design depends not on pixel-perfect representation of a given document or application accross
+                    all screens, devices, and user scenarios, but in a structure that can be interpreted and rendered on all
+                    web-enabled devices in a manner that is faithful to the original.
+                </p>
+            </blockquote>
+            <p>
+                Com isso em mente e, em se tratando de desenvolvimento para a <i lang="en">web</i>, devemos ter muita clareza 
+                no fato de que a marcação da linguagem HTML não se trata de uma ferramenta estilística, com elementos destinados
+                à composição de uma apresentação e de uso intercambiável.
+                <strong>Os elementos de marcação HTML são de uso semântico</strong>, auxiliando máquinas, dispositivos e seus
+                usuários na interpretação dos contextos e das informações transmitidas, sendo um bloco fundamental na construção
+                de páginas e aplicações <i lang="en">web</i> amplamente acessíveis.    
+            </p>
+       </header>
+       <main>
+           <h2>Desenvolvimento <i lang="en">Web</i></h2>
+           <p>
+               As raizes da internet e do <abbr title="Hyper Text Markup Language">HTML</abbr> estão muito relacionadas com a 
+               troca de informações textuais. Com a popularização da tecnologia e disseminação de seu uso, novas aplicações foram sendo 
+               implementadas, de foram que, no caso do <abbr title="Hyper Text Markup Language">HTML</abbr>, uma linguagem criada para 
+               a marcação de textos, tivémos seu uso extendido para a formatção, incorporação de elementos multimídia e paginação 
+               de conteúdo.
+           </p>
+           <p>
+               Tal extenção de uso se deu por meio de muitas adaptações, muitas das quais ocorreram pela perversção do propósito 
+               original de muitos dos elementos dessa linguagem, notadamente o caso da tabela. Nesse sentido, o livro <a>
+                   <cite lang="en">Creating Killer Websites</cite>
+               </a>, de 1996, escrito por David Siegel, foi um marco referencial.
+           </p>
+           <p>
+               <a href="https://talks.jensimmons.com/20LmLE/slides#slide16-desc" target="_blank">
+                   <img src="assets/images/creating-killer-web-sites-book.webp" alt="link para site apresentando o uso de tabelas proposto no livro" />
+               </a><br />
+               <a href="assets/images/book-creating-killer-websites-1996-table-use.jpg" target="_blank">
+                   <img src="assets/images/book-creating-killer-websites-1996-table-use.jpg" width="638" alt="imagem de passagem do livro onde se trata do uso de uma tabela">
+                </a>
+           </p>
+           <p>
+               Nesse livro, o autor ensina diversas técnicas de uso e implementação dos recursos dispníveis tendo em vista <i>empoderar o webdesigner</i> 
+               em sua atividade criativa. Tais práticas realmente marcaram uma época e, certamente, direcionaram os desenvolvedores quanto as 
+               necessidades criativas que precisavam ser atendidas. Por outro lado, criaram uma imensa problemática de inacessibilidade de conteúdo 
+               para todo um espectro de usuários que dependiam (e dependem) largamente da estruturação própria da linguagem HTML - ao se 
+               substituir a ierarquia de conteúdos da linguagem por uma ordenação estritamente visual das páginas, o desenvolvedor web impossibilitava 
+               toda uma gama de interfaces não visuais de interagirem com os conteúdos.
+           </p>
+           <p>
+               Tamanha foi a problemática criada e o impacto gerado por seu livro que o próprio Siegel, em 1997, publicou um artigo 
+               entitulado <a href="https://www.xml.com/pub/a/w3j/s1.people.html"><cite lang="en">The Web is Ruined and I Ruined it</cite></a>.
+           </p>
+           <p>
+               Após isso, vimos o despontar de uma cultura de aversão ao uso de tabelas 
+               em <abbr title="Hyper Text Markup Language">HTML</abbr>, cultura essa que perdura até o dia de hoje, a ponte de 
+               vermos sites implementarem dados tabulares por meios outros que não uma tabela...
+           </p>
+           <p>
+               Como em todas as outras coisas da vida, no desenvolvimento <i lang="eng">web</i> temos que não seguir etremos e ter claro o proósito de 
+               cada ferramente. Assim temos a seguinte estrutura de ferramentas e suas aplicações, à nossa disposição:
+           </p>
+           <table>
+               <caption>Feerramentas para o design web e suas aplicações</caption>
+               <tr>
+                   <th scope="col">Tecnologia</th>
+                   <th scope="col">Aplicação</th>
+                   <th scope="col">Exemplo de Uso</th>
+               </tr>
+               <tr>
+                   <td><abbr title="Hyper Text Markup Language">HTML</abbr></td>
+                   <td>
+                       Linguage destinada a identificar e descrever os vários componentes de uma página. 
+                       Identifica a função de um elemento no todo e agrega à sua interpretação de sentido.
+                   </td>
+                   <td>Ordenação dos tópico e subtópicos de uma página</td>
+               </tr>
+               <tr>
+                   <td><abbr title="Cascading Style Sheets">CSS</abbr></td>
+                   <td>
+                       Possibilita a parametrização de como o conteúdo deverá ser apresentado.
+                       Qualquer elemento que não agregue ao sentido e interpretação da informação 
+                       deve ser tratado por essa ferramenta.
+                   </td>
+                   <td>Parametrização das fontes e esquema de cores de uma página</td>
+               </tr>
+               <tr>
+                   <td>JavaScript</td>
+                   <td>
+                       Agrega interatividade e inteligência à página. Possibilita a personalização 
+                       da experiência com a página e expande sua funcionalidade.
+                   </td>
+                   <td>Interação entre informações de bancos de dados e elementos da estrutura da página</td>
+               </tr>
+           </table>
+       </main>
+       <footer>
+           <h2>Notas e Referências</h2>
+           <ul>
+               <li id="1r">
+                   <a href="#1">1</a>. Não pude identificar um trabalho específico vinculado com 
+                   a referida citação, mas, em diferentes formas e datas, essa é uma definição constantemente associada à figura
+                   de Ronald Mace, tanto em livros como 
+                   <a href="https://www.oreilly.com/library/view/universal-design-for/9780596155681/" target="_blank">
+                    <cite lang="en">Universal Design for Web Applications</cite>
+                    </a>, de Wendy Chisholm e Matt May, como na própria página do 
+                    <a href="https://projects.ncsu.edu/ncsu/design/cud/about_us/usronmace.htm" target="_blank">
+                        <i lang="en">The Center For Universal Design</i>
+                    </a>,
+                   e em diversas outras referências institucionais ou acadêmmicas.
+               </li>
+           </ul>
+       </footer>
+
+        
+    </body>
+</html>
